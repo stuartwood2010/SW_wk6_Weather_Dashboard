@@ -1,0 +1,41 @@
+:root {
+    --blue: rgb(0, 0, 60);
+    --lightblue: rgba(0, 153, 255, 0.562);
+    --white: rgb(255, 255, 255);
+    --headerFont: 'Play', sans-serif;
+    --bodyFont: 'Architects Daughter', cursive;
+}
+body {
+    box-sizing: border-box;
+    color: var(--white);
+    font-family: var(--bodyFont);
+    background-color: var(--lightblue);
+}
+header {
+    text-align: center;
+    background-color: var(--blue);
+}
+header h1 {
+    font-size: 72px;
+    padding: 25px;
+}
+.card {
+    background-color: var(--blue);
+    border-color: var(--lightblue);
+    text-align: center;
+}
+.card-header {
+    background-color: var(--lightblue);
+    color: var(--white);
+    text-align: center;
+    font-size: 32px;
+}
+.btn {
+    background-color: var(--lightblue);
+    color: var(--white);
+    font-size: 20px;
+}
+.subtitle {
+    color: var(--blue);
+    text-align: center;
+}
