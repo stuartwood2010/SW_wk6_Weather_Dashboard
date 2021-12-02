@@ -13,26 +13,37 @@
     <title>Weather Forecast</title>
 </head>
 <body>
-    <header>
+    <header class="header col-12">
       <h1>Weather Dashboard</h1>
     </header>
     
-    <main class="main flex-row justify-space-between">
-        <div class="col-12 col-md-4">
-    
-          <div class="card">
-            <h3 class="card-header">Search For A City</h3>
+    <main class="main col-12">
+        <div class="card col-4">    
+          <div class="search">
+            <h2 class="search-header">Search For A City</h3>
             <form id="user-form" class="card-body">
               <input name="cityid" id="cityid" type="text" autofocus="true" class="form-input" />
               <button type="submit" class="btn">Search</button>
             </form>
           </div>
+            <div class="cities">
+              <h3 class="cities-subtitle">Favorite Cities: <span id="favoriteCities"></span></h2>
+              <div id="cities-container" class="list-group"></div>
+                <ul class="cities-list">
+
+                </ul>
+            </div>
+          
         </div>
-    
-        <div class="col-4 col-md-4">
-          <h2 class="subtitle">Favorite Cities: <span id="favoriteCities"></span></h2>
-          <div id="cities-container" class="list-group"></div>
+        
+        <div class="today col-7">
+          <h2 class="today-header">Today's Forecast</h3>
+          <div class="forecast">
+
+          </div>
+
         </div>
+      
       </main>
     
 
