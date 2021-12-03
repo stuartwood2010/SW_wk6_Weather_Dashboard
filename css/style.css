@@ -27,8 +27,7 @@ header h1 {
 .main {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    
+    justify-content: center;    
 }
 .card {
     background-color: var(--lightblue);
@@ -81,4 +80,32 @@ header h1 {
     margin: 1px;
     border-bottom: 2px solid var(--lightblue);
     text-align: center;
+}
+.todays_date {
+    font-size: 32px;
+    justify-content: center;
+    list-style-type: none;
+}
+.future {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.day {
+    background-color: var(--blue);
+    font-size:24px;
+    color: var(--white);
+    margin: 15px;
+}
+.days {
+    background-color: var(--blue); 
+    padding: 5px;
+    width: 150px;
+}
+.day_1, .day_2, .day_3, .day_4, .day_5 {
+    list-style-type: none;
+    font-size: 24px;
+    color: var(--white);
+    text-decoration: none;
 }
