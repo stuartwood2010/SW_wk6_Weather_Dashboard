@@ -48,12 +48,13 @@ header h1 {
 }
 .search-header {
     color: var(--lightblue);
-    border-bottom: 2px solid var(--lightblue);
+    text-decoration: underline;
     text-align: center;
     font-size: 32px;
 }
-.btn {
+#srchbtn {
     background-color: var(--lightblue);
+    border: 3px double var(--blue);
     color: var(--blue);
     font-size: 28px;
     margin-top: 12px;
@@ -74,38 +75,42 @@ header h1 {
     margin: 15px;
     height: 300px;
 }
-.today-header {
-    font-size: 32px;
-    color: var(--lightblue);    
-    margin: 1px;
-    border-bottom: 2px solid var(--lightblue);
-    text-align: center;
-}
-.todays_date {
-    font-size: 32px;
+.forecast-header {
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    border-bottom: 1px solid var(--lightblue);
+}
+#todaysDate {
+    font-size: 32px;
+    color: var(--lightblue);
+}
+#weatherIcon {
+    display: flex;
+    height: 50px;
+    width: 50px;
+}
+#today-header {
+    font-size: 40px;
+    color: var(--lightblue);    
+    margin: 1px 0 0 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+#todays_date {
+    font-size: 32px;
     list-style-type: none;
 }
+#descriptionToday {
+    text-align: center;
+    font-size: 34px;
+    text-transform: uppercase;
+}
 .future {
+    background-color: var(--blue);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-}
-.day {
-    background-color: var(--blue);
-    font-size:24px;
-    color: var(--white);
-    margin: 15px;
-}
-.days {
-    background-color: var(--blue); 
-    padding: 5px;
-    width: 150px;
-}
-.day_1, .day_2, .day_3, .day_4, .day_5 {
-    list-style-type: none;
-    font-size: 24px;
-    color: var(--white);
-    text-decoration: none;
+    font-size: 20px;
 }

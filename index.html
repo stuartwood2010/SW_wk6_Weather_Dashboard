@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Play:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="assets/css/style.css"/>
     <title>Weather Forecast</title>
 </head>
 <body>
@@ -23,41 +23,42 @@
             <h2 class="search-header">Search For A City</h3>
             <form id="user-form" class="card-body">
               <input name="cityid" id="cityid" type="text" autofocus="true" class="form-input" />
-              <button type="submit" class="srchbtn">Search</button>
+              <button type="submit" id="srchbtn">Search</button>
             </form>
           </div>
             <div class="cities">
               <h3 class="cities-subtitle">Favorite Cities: <span id="favoriteCities"></span></h2>
               <div id="cities-container" class="list-group"></div>
-                <ul class="cities-list">
-                  
+                <ul id="cities-list">                  
                 </ul>
-            </div>
-          
+            </div>          
         </div>
       
       <div class="forecast col-7">
         <div class="today">
-          <h2 class="today-header">Today's Forecast</h2>
-            <ul class="todays_date">
-              <li class="currentday" id="image"></li>
-              <li class="currentday" id="temp">Temp:</li>
-              <li class="currentday" id="wind">Wind:</li>
-              <li class="currentday" id="humidity">Humidity:</li>
-              <li class="currentday" id="uvIndex">UV Index:</li>
+          <div class="forecast-header">
+            <div id="todaysDate"></div>
+            <img id="weatherIcon"></img>
+            <h2 id="today-header"></h2>
+          </div>
+          <ul id="todays_date">
+              <li class="currentday" id="descriptionToday"></li>
+              <li class="currentday" id="tempToday"></li>
+              <li class="currentday" id="windToday"></li>
+              <li class="currentday" id="humidityToday"></li>
+              <li class="currentday" id="uvIndexToday"></li>
             </ul>              
         </div>
 
         <div class="future">
 
-          <div class="future cards" id="day1">
+          <!-- <div class="future cards" id="day1">
             <h4 class="day 1">Date:
               <ul class="days">
-                <li class="day_1" id="1_image"></li>         
-                <li class="day_1" id="1_temp">Temp:</li>
-                <li class="day_1" id="1_wind">Wind:</li>
-                <li class="day_1" id="1_humidity">Humidity:</li>
-                <li class="day_1" id="1_uvIndex">UV Index:</li>
+                <image class="day_1" id="1_image"></image>         
+                <li class="day_1" id="1_temp"></li>
+                <li class="day_1" id="1_wind"></li>
+                <li class="day_1" id="1_humidity"></li>
               </ul>
             </h4>
           </div>
@@ -69,7 +70,6 @@
                 <li class="day_2" id="2_temp">Temp:</li>
                 <li class="day_2" id="2_wind">Wind:</li>
                 <li class="day_2" id="2_humidity">Humidity:</li>
-                <li class="day_2" id="2_uvIndex">UV Index:</li>
               </ul>  
             </h4>            
           </div>
@@ -81,7 +81,6 @@
                 <li class="day_3" id="3_temp">Temp:</li>
                 <li class="day_3" id="3_wind">Wind:</li>
                 <li class="day_3" id="3_humidity">Humidity:</li>
-                <li class="day_3" id="3_uvIndex">UV Index:</li>
               </ul>
             </h4>
           </div>
@@ -93,7 +92,6 @@
                 <li class="day_4" id="4_temp">Temp:</li>
                 <li class="day_4" id="4_wind">Wind:</li>
                 <li class="day_4" id="4_humidity">Humidity:</li>
-                <li class="day_4" id="4_uvIndex">UV Index:</li>
               </ul>
             </h4>
           </div>
@@ -105,16 +103,17 @@
                 <li class="day_5" id="5_temp">Temp:</li>
                 <li class="day_5" id="5_wind">Wind:</li>
                 <li class="day_5" id="5_humidity">Humidity:</li>
-                <li class="day_5" id="5_uvIndex">UV Index:</li>
               </ul>
             </h4>
-          </div>
+          </div> -->
 
         </div>
 
       </div>
       </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="assets/js/script.js"></script>
 </body>
 </html>
